@@ -94,7 +94,7 @@
               changeButton('starting');
               document.getElementById('prices').style.display = "none";
               document.getElementById('reader').style.height = "auto";
-              document.getElementById('reader').style.backgroundImage = "url('intro.png')";
+              document.getElementById('reader').style.backgroundImage = "url('images/intro.png')";
               startScanning("environment")
               .then(_ => {
                   scanning = true;
@@ -110,7 +110,7 @@
               .then(_ => {
                   scanning = false;
                   changeButton('start');
-                  document.getElementById('reader').style.backgroundImage = "url('intro.png')";
+                  document.getElementById('reader').style.backgroundImage = "url('images/intro.png')";
                   document.getElementById('reader').style.height = "350px";
               })
               .catch(err => {
